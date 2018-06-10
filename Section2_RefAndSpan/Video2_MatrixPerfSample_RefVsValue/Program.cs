@@ -1,5 +1,7 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Diagnostics;
+using System.Runtime.CompilerServices;
 using BenchmarkDotNet.Attributes;
 using BenchmarkDotNet.Running;
 
@@ -7,9 +9,9 @@ namespace Video2_MatrixPerfSample_RefVsValue
 {
 	public struct Matrix
 	{
-		public readonly int i00, i01, i02;
-		public readonly int i10, i11, i12;
-		public readonly int i20, i21, i22;
+		public int i00, i01, i02;
+		public int i10, i11, i12;
+		public int i20, i21, i22;
 
 		public Matrix(int i00, int i01, int i02, int i10, int i11, int i12, int i20, int i21, int i22)
 		{
@@ -29,6 +31,22 @@ namespace Video2_MatrixPerfSample_RefVsValue
 
 	public class Program
 	{
+		static List<Tuple<Matrix, Matrix>> matrixList;
+
+		static Program()
+		{
+			Random rnd = new Random();
+			matrixList = new List<Tuple<Matrix, Matrix>>();
+			for (int i = 0; i < 1000; i++)
+			{
+				Matrix m1 = new Matrix(N(), N(), N(), N(), N(), N(), N(), N(), N());
+				Matrix m2 = new Matrix(N(), N(), N(), N(), N(), N(), N(), N(), N());
+				matrixList.Add(new Tuple<Matrix, Matrix>(m1, m2));
+			}
+						
+			int N() => rnd.Next(Int32.MaxValue / 5);
+		}
+
 		static void Main(string[] args)
 		{
 			var summary = BenchmarkRunner.Run<Program>();
@@ -37,37 +55,34 @@ namespace Video2_MatrixPerfSample_RefVsValue
 		[Benchmark]
 		public static void RefReturnPerf()
 		{
-			Random rnd = new Random();
-			for (int i = 0; i < 100; i++)
+			
+			for (int i = 0; i < 1000; i++)
 			{
-				Matrix m1 = new Matrix(N(), N(), N(), N(), N(), N(), N(), N(), N());
-				Matrix m2 = new Matrix(N(), N(), N(), N(), N(), N(), N(), N(), N());
+				var item1 = matrixList[i].Item1;
+				var item2 = matrixList[i].Item2;
 
-				ref Matrix biggerMatrix = ref GetBiggerByReference(ref m1, ref m2);
+				ref Matrix biggerMatrix = ref GetBiggerByReference(ref item1, ref item2);
 				Debug.WriteLine(biggerMatrix.i00);
 			}
 			
-			int N() => rnd.Next(Int32.MaxValue / 5);
+			
 		}
 
 		[Benchmark]
 		public static void RetByValuePerf()
 		{
-			Random rnd = new Random();
-			for (int i = 0; i < 100; i++)
+			for (int i = 0; i < 1000; i++)
 			{
-				Matrix m1 = new Matrix(N(), N(), N(), N(), N(), N(), N(), N(), N());
-				Matrix m2 = new Matrix(N(), N(), N(), N(), N(), N(), N(), N(), N());
+				var item1 = matrixList[i].Item1;
+				var item2 = matrixList[i].Item2;
 
-				Matrix biggerMatrix = GetBiggerByValue(m1, m2);
+				Matrix biggerMatrix = GetBiggerByValue(item1, item2);
 				Debug.WriteLine(biggerMatrix.i00);
 			}
-
-			int N() => rnd.Next(Int32.MaxValue / 5);
 		}
 
 
-
+		[MethodImpl(MethodImplOptions.NoInlining)]
 		public static Matrix GetBiggerByValue(Matrix matrix1, Matrix matrix2)
 		{
 			var sum1 = matrix1.i00 + matrix1.i01 + matrix1.i02 +
@@ -84,6 +99,7 @@ namespace Video2_MatrixPerfSample_RefVsValue
 				return matrix1;
 		}
 
+		[MethodImpl(MethodImplOptions.NoInlining)]
 		public static ref Matrix GetBiggerByReference(ref Matrix matrix1, ref Matrix matrix2)
 		{
 			var sum1 = matrix1.i00 + matrix1.i01 + matrix1.i02 +
