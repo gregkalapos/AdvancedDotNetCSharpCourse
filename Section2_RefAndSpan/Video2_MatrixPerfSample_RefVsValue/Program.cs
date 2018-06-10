@@ -64,8 +64,6 @@ namespace Video2_MatrixPerfSample_RefVsValue
 				ref Matrix biggerMatrix = ref GetBiggerByReference(ref item1, ref item2);
 				Debug.WriteLine(biggerMatrix.i00);
 			}
-			
-			
 		}
 
 		[Benchmark]
