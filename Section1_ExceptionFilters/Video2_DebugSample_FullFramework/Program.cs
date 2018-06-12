@@ -66,7 +66,7 @@ namespace Video2_DebugSample_FullFramework
 		[MethodImpl(MethodImplOptions.NoInlining)]
 		static void C()
 		{
-			var date = DateTime.UtcNow;
+			var dateTime = DateTime.UtcNow;
 			throw new Exception("Bamm");
 		}
 

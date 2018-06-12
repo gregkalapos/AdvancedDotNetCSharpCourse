@@ -39,7 +39,6 @@ namespace Video2_Performance_Sample
 				Debug.WriteLine($"Exception catch {e.Message}");
 				throw;
 			}
-
 		}
 
 		[Benchmark]
