@@ -31,6 +31,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Video2_Finalizer_GC", "Sect
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Video3_IDisposable", "Section3_FinalizerAndIDisposable\Video3_IDisposable\Video3_IDisposable.csproj", "{C50EAB90-C7AE-4F7F-9575-6DF1651C3D65}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Video4_ImplementIDisposableAndFinalizer", "Section3_FinalizerAndIDisposable\Video4_ImplementIDisposableAndFinalizer\Video4_ImplementIDisposableAndFinalizer.csproj", "{008F8809-E36E-4C41-ABEC-A3EFC4607219}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -81,6 +83,10 @@ Global
 		{C50EAB90-C7AE-4F7F-9575-6DF1651C3D65}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C50EAB90-C7AE-4F7F-9575-6DF1651C3D65}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C50EAB90-C7AE-4F7F-9575-6DF1651C3D65}.Release|Any CPU.Build.0 = Release|Any CPU
+		{008F8809-E36E-4C41-ABEC-A3EFC4607219}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{008F8809-E36E-4C41-ABEC-A3EFC4607219}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{008F8809-E36E-4C41-ABEC-A3EFC4607219}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{008F8809-E36E-4C41-ABEC-A3EFC4607219}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -97,6 +103,7 @@ Global
 		{A74F8B52-EF45-4042-A6F0-486BF889576E} = {559263FF-046E-430D-A845-4BC5144A2331}
 		{23D6D768-FBF0-4246-ACF7-5EB9B012F9D1} = {559263FF-046E-430D-A845-4BC5144A2331}
 		{C50EAB90-C7AE-4F7F-9575-6DF1651C3D65} = {559263FF-046E-430D-A845-4BC5144A2331}
+		{008F8809-E36E-4C41-ABEC-A3EFC4607219} = {559263FF-046E-430D-A845-4BC5144A2331}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {04BEB46F-03EC-4B9A-BAE4-323D1D2FFC79}
