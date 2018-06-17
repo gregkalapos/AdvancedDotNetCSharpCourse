@@ -27,11 +27,17 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Section3_FinalizerAndIDispo
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Video1_Finalizer", "Section3_FinalizerAndIDisposable\Video1_Finalizer\Video1_Finalizer.csproj", "{A74F8B52-EF45-4042-A6F0-486BF889576E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Video2_Finalizer_GC", "Section3_FinalizerAndIDisposable\Video2_Finalizer_GC\Video2_Finalizer_GC.csproj", "{23D6D768-FBF0-4246-ACF7-5EB9B012F9D1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Video2_Finalizer_GC", "Section3_FinalizerAndIDisposable\Video2_Finalizer_GC\Video2_Finalizer_GC.csproj", "{23D6D768-FBF0-4246-ACF7-5EB9B012F9D1}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Video3_IDisposable", "Section3_FinalizerAndIDisposable\Video3_IDisposable\Video3_IDisposable.csproj", "{C50EAB90-C7AE-4F7F-9575-6DF1651C3D65}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Video4_ImplementIDisposableAndFinalizer", "Section3_FinalizerAndIDisposable\Video4_ImplementIDisposableAndFinalizer\Video4_ImplementIDisposableAndFinalizer.csproj", "{008F8809-E36E-4C41-ABEC-A3EFC4607219}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Video4_ImplementIDisposableAndFinalizer", "Section3_FinalizerAndIDisposable\Video4_ImplementIDisposableAndFinalizer\Video4_ImplementIDisposableAndFinalizer.csproj", "{008F8809-E36E-4C41-ABEC-A3EFC4607219}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Section4_StructLayout", "Section4_StructLayout", "{B82C0789-69C4-4DE8-AD21-EDF15D085097}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Video1_StructLayout", "Section4_StructLayout\Video1_StructLayout\Video1_StructLayout.csproj", "{9FBAE81F-9B77-4435-A86C-58541642CA13}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Video2_StructLayoutAttribute", "Section4_StructLayout\Video2_StructLayoutAttribute\Video2_StructLayoutAttribute.csproj", "{A6387961-FE6D-436F-9853-9E6C7EED8350}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -87,6 +93,14 @@ Global
 		{008F8809-E36E-4C41-ABEC-A3EFC4607219}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{008F8809-E36E-4C41-ABEC-A3EFC4607219}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{008F8809-E36E-4C41-ABEC-A3EFC4607219}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9FBAE81F-9B77-4435-A86C-58541642CA13}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9FBAE81F-9B77-4435-A86C-58541642CA13}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9FBAE81F-9B77-4435-A86C-58541642CA13}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9FBAE81F-9B77-4435-A86C-58541642CA13}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A6387961-FE6D-436F-9853-9E6C7EED8350}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A6387961-FE6D-436F-9853-9E6C7EED8350}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A6387961-FE6D-436F-9853-9E6C7EED8350}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A6387961-FE6D-436F-9853-9E6C7EED8350}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -104,6 +118,8 @@ Global
 		{23D6D768-FBF0-4246-ACF7-5EB9B012F9D1} = {559263FF-046E-430D-A845-4BC5144A2331}
 		{C50EAB90-C7AE-4F7F-9575-6DF1651C3D65} = {559263FF-046E-430D-A845-4BC5144A2331}
 		{008F8809-E36E-4C41-ABEC-A3EFC4607219} = {559263FF-046E-430D-A845-4BC5144A2331}
+		{9FBAE81F-9B77-4435-A86C-58541642CA13} = {B82C0789-69C4-4DE8-AD21-EDF15D085097}
+		{A6387961-FE6D-436F-9853-9E6C7EED8350} = {B82C0789-69C4-4DE8-AD21-EDF15D085097}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {04BEB46F-03EC-4B9A-BAE4-323D1D2FFC79}
