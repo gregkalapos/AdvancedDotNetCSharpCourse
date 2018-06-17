@@ -7,9 +7,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Section2_RefAndSpan", "Sect
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Video1_RefAndManagedPointers", "Section2_RefAndSpan\Video1_RefAndManagedPointers\Video1_RefAndManagedPointers.csproj", "{D8604BA0-18B7-46EB-9133-A86864A0F4F5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Video2_RefReturAndRefLocal", "Section2_RefAndSpan\Video2_RefReturAndRefLocal\Video2_RefReturAndRefLocal.csproj", "{5ECCF6B6-F37F-4DFC-81D1-DBABB772169E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Video2_RefReturAndRefLocal", "Section2_RefAndSpan\Video2_RefReturAndRefLocal\Video2_RefReturAndRefLocal.csproj", "{5ECCF6B6-F37F-4DFC-81D1-DBABB772169E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Video2_MatrixPerfSample_RefVsValue", "Section2_RefAndSpan\Video2_MatrixPerfSample_RefVsValue\Video2_MatrixPerfSample_RefVsValue.csproj", "{E551D5BF-C9C1-4FB2-BD36-36BBFEC30033}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Video2_MatrixPerfSample_RefVsValue", "Section2_RefAndSpan\Video2_MatrixPerfSample_RefVsValue\Video2_MatrixPerfSample_RefVsValue.csproj", "{E551D5BF-C9C1-4FB2-BD36-36BBFEC30033}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Section1_ExceptionFilters", "Section1_ExceptionFilters", "{122FE72A-EFE4-4CB5-9671-12828A8D759A}"
 EndProject
@@ -19,9 +19,15 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Video2_DebugSample_FullFram
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Video2_Performance_Sample", "Section1_ExceptionFilters\Video2_Performance_Sample\Video2_Performance_Sample.csproj", "{D5B56EFD-F582-40A7-882F-C75240855D0F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Video3_Span_Sample1", "Section2_RefAndSpan\Video3_Span_Sample1\Video3_Span_Sample1.csproj", "{2BEDA3F9-FE3D-408B-985B-5B6CC17228AD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Video3_Span_Sample1", "Section2_RefAndSpan\Video3_Span_Sample1\Video3_Span_Sample1.csproj", "{2BEDA3F9-FE3D-408B-985B-5B6CC17228AD}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Video4_StringParsingWithSpan", "Section2_RefAndSpan\Video4_StringParsingWithSpan\Video4_StringParsingWithSpan.csproj", "{05CA65D7-E461-4AF3-BD22-BE60375ABC93}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Section3_FinalizerAndIDisposable", "Section3_FinalizerAndIDisposable", "{559263FF-046E-430D-A845-4BC5144A2331}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Video1_Finalizer", "Section3_FinalizerAndIDisposable\Video1_Finalizer\Video1_Finalizer.csproj", "{A74F8B52-EF45-4042-A6F0-486BF889576E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Video2_Finalizer_GC", "Section3_FinalizerAndIDisposable\Video2_Finalizer_GC\Video2_Finalizer_GC.csproj", "{23D6D768-FBF0-4246-ACF7-5EB9B012F9D1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -61,6 +67,14 @@ Global
 		{05CA65D7-E461-4AF3-BD22-BE60375ABC93}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{05CA65D7-E461-4AF3-BD22-BE60375ABC93}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{05CA65D7-E461-4AF3-BD22-BE60375ABC93}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A74F8B52-EF45-4042-A6F0-486BF889576E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A74F8B52-EF45-4042-A6F0-486BF889576E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A74F8B52-EF45-4042-A6F0-486BF889576E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A74F8B52-EF45-4042-A6F0-486BF889576E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{23D6D768-FBF0-4246-ACF7-5EB9B012F9D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{23D6D768-FBF0-4246-ACF7-5EB9B012F9D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{23D6D768-FBF0-4246-ACF7-5EB9B012F9D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{23D6D768-FBF0-4246-ACF7-5EB9B012F9D1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -74,6 +88,8 @@ Global
 		{D5B56EFD-F582-40A7-882F-C75240855D0F} = {122FE72A-EFE4-4CB5-9671-12828A8D759A}
 		{2BEDA3F9-FE3D-408B-985B-5B6CC17228AD} = {F675CCB6-F86A-4798-80A7-E9CE12CA3806}
 		{05CA65D7-E461-4AF3-BD22-BE60375ABC93} = {F675CCB6-F86A-4798-80A7-E9CE12CA3806}
+		{A74F8B52-EF45-4042-A6F0-486BF889576E} = {559263FF-046E-430D-A845-4BC5144A2331}
+		{23D6D768-FBF0-4246-ACF7-5EB9B012F9D1} = {559263FF-046E-430D-A845-4BC5144A2331}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {04BEB46F-03EC-4B9A-BAE4-323D1D2FFC79}
