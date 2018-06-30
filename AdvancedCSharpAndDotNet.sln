@@ -35,9 +35,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Video4_ImplementIDisposable
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Section4_StructLayout", "Section4_StructLayout", "{B82C0789-69C4-4DE8-AD21-EDF15D085097}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Video1_StructLayout", "Section4_StructLayout\Video1_StructLayout\Video1_StructLayout.csproj", "{9FBAE81F-9B77-4435-A86C-58541642CA13}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Video1_StructLayout", "Section4_StructLayout\Video1_StructLayout\Video1_StructLayout.csproj", "{9FBAE81F-9B77-4435-A86C-58541642CA13}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Video2_StructLayoutAttribute", "Section4_StructLayout\Video2_StructLayoutAttribute\Video2_StructLayoutAttribute.csproj", "{A6387961-FE6D-436F-9853-9E6C7EED8350}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Video2_StructLayoutAttribute", "Section4_StructLayout\Video2_StructLayoutAttribute\Video2_StructLayoutAttribute.csproj", "{A6387961-FE6D-436F-9853-9E6C7EED8350}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Section0_CourseLogistics", "Section0_CourseLogistics", "{33B33975-6EC1-4B01-AB3B-DE800EBF2409}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CourseLogisticsSample", "Section0_CourseLogistics\CourseLogisticsSample\CourseLogisticsSample.csproj", "{6A6683A2-9F44-4C77-8889-121AEE2673CA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -101,6 +105,10 @@ Global
 		{A6387961-FE6D-436F-9853-9E6C7EED8350}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A6387961-FE6D-436F-9853-9E6C7EED8350}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A6387961-FE6D-436F-9853-9E6C7EED8350}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6A6683A2-9F44-4C77-8889-121AEE2673CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6A6683A2-9F44-4C77-8889-121AEE2673CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6A6683A2-9F44-4C77-8889-121AEE2673CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6A6683A2-9F44-4C77-8889-121AEE2673CA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -120,6 +128,7 @@ Global
 		{008F8809-E36E-4C41-ABEC-A3EFC4607219} = {559263FF-046E-430D-A845-4BC5144A2331}
 		{9FBAE81F-9B77-4435-A86C-58541642CA13} = {B82C0789-69C4-4DE8-AD21-EDF15D085097}
 		{A6387961-FE6D-436F-9853-9E6C7EED8350} = {B82C0789-69C4-4DE8-AD21-EDF15D085097}
+		{6A6683A2-9F44-4C77-8889-121AEE2673CA} = {33B33975-6EC1-4B01-AB3B-DE800EBF2409}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {04BEB46F-03EC-4B9A-BAE4-323D1D2FFC79}
